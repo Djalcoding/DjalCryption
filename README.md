@@ -44,7 +44,7 @@ DjalCryption uses a custom algorithm that combines Atbash and a modified version
   dencryption --i file.Djal --d --key 3
   ```
   ### Note
-  You should be redirecting the output to another file with '>' when using the command
+  You should be redirecting the output to a file with '>' when using the command
 ## Safety First ⚠️
   - Always backup your files
   - Remember your encryption key
