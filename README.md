@@ -30,6 +30,9 @@ DjalCryption uses a custom algorithm that combines Atbash and a modified version
    ```bash
    echo 'export PATH="$HOME/path/to/cloned/repo/target/release:$PATH"' >> ~/.bashrc && source ~/.bashrc
    ```
+
+## Note
+you could also just get the binary from the releases tab and add it to path.
 ## Usage 
   Help command
   ```bash
