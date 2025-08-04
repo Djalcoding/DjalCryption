@@ -1,6 +1,6 @@
 #[allow(dead_code)]
 pub mod encrypting {
-    use std::fs;
+    use std::{fs, process};
     pub struct Query {
         path: String,
         pub contents: String,
@@ -81,8 +81,9 @@ pub mod encrypting {
             let contents = match file_content {
                 Ok(text) => text,
                 Err(e) => {
-                    eprint!("Error : {e}");
-                    panic!();
+                    eprint!("Could not open file \nError : {e}");
+
+                    process::exit(105); //missing file
                 }
             };
             Query {
@@ -107,7 +108,7 @@ mod tests {
     #[test]
     fn atbash_encrpyt() {
         let q = Query::from(
-            String::from("/home/bert/Projects/RustProjects/encrypting/src/test_files/decrypted.txt"),
+            String::from("src/test_files/decrypted.txt"),
             false,
         );
         let out = q.get_atbash();
@@ -118,7 +119,7 @@ mod tests {
     #[test]
     fn atbash_decrypt() {
         let q = Query::from(
-            String::from("/home/bert/Projects/RustProjects/encrypting/src/test_files/encrpyted.txt"),
+            String::from("src/test_files/encrpyted.txt"),
             true,
         );
         let out = q.get_atbash();
