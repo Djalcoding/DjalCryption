@@ -1,9 +1,10 @@
 # DjalCryption 
 
- DjalCryption is a simple tool that encrypts your text files secure !
+ DjalCryption is a simple tool that encrypts or decrypt your text files !
+ <img width="1920" height="171" alt="image" src="https://github.com/user-attachments/assets/cd63e98c-a38c-43e8-ae03-6fcb1c5409ce" />
 
 ## Features
-- 🔄 Encrypt and Decrypt text files.
+- 🔄 Encrypt and decrypt text files.
 - ⌨️ Command line interface.
 - 🔑 Customizable encryption key.
 
