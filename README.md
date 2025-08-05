@@ -28,7 +28,10 @@ DjalCryption uses a custom algorithm that combines Atbash and a modified version
    ```
 3. Add it to path :
    ```bash
-   echo 'export PATH="$HOME/path/to/cloned/repo/target/release:$PATH"' >> ~/.bashrc && source ~/.bashrc
+   echo 'export PATH=$PATH:/home/path/to/the/directory/target/release' >> ~/.bashrc
+   ```
+   ```zsh
+   echo 'export PATH=$PATH:/home/path/to/the/directory/target/release' >> ~/.zshrc
    ```
 
 ## Note
