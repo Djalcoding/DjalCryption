@@ -59,5 +59,3 @@ you could also just get the binary from the releases tab and add it to path.
 ## Safety First ⚠️
   - Always backup your files
   - Remember your encryption key
----
-Made by Djalcoding
