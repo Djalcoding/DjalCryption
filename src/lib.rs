@@ -29,7 +29,7 @@ pub mod encrypting {
             for character in self.contents.chars() {
                 let mut short_key = key;
                 let mut ch = character;
-                while short_key > 0 {
+                while short_key > 0 { // I know this is unoptimized :( | I hate modulo
                     if ch as u8 == 255 {
                         ch = 0 as char;
                     } else {
@@ -47,7 +47,7 @@ pub mod encrypting {
             for character in self.contents.chars() {
                 let mut short_key = key;
                 let mut ch = character;
-                while short_key > 0 {
+                while short_key > 0 { 
                     if ch as u8 == 0 {
                         ch = 255 as char;
                     } else {
