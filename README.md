@@ -27,10 +27,12 @@ DjalCryption uses a custom algorithm that combines Atbash and a modified version
    cargo build --release
    ```
 3. Add it to path :
-   Bash : 
+   
+   bash : 
    ```bash
    echo 'export PATH=$PATH:/home/path/to/the/directory/target/release' >> ~/.bashrc
    ```
+   
    zsh : 
    ```zsh
    echo 'export PATH=$PATH:/home/path/to/the/directory/target/release' >> ~/.zshrc
